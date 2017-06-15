@@ -50,7 +50,7 @@ Also you can inspect the version of Kubectl installed
 kubectl version
 ```
 
-![Image of kubectl version](img/kubectl_version.png)
+![Image of kubectl version](https://github.com/fabioharams/kubernetes/blob/master/img/kubectl_version.png)
 
 
 To connect on your Kubernetes Dashboard just execute the following command bellow. This will enable a local proxy redirecting your local connection to Kubernetes on ACS
@@ -65,7 +65,7 @@ Open the following URL on your browser (eg: Chrome) to access the Kubernetes das
 http://localhost:8001/ui
 ```
 
-![Image of kubernetes dashboard](img/dashboard.png)
+![Image of kubernetes dashboard](https://github.com/fabioharams/kubernetes/blob/master/img/dashboard.png)
 
 
 ### Extra - using namespaces ###
@@ -151,7 +151,7 @@ After the installation you can check if everything is going fine.
 helm search
 ```
 
-![Image of helm search](img/helm_search.png)
+![Image of helm search](https://github.com/fabioharams/kubernetes/blob/master/img/helm_search.png)
 
 ### Install Chart to test ###
 ```bash
@@ -164,7 +164,7 @@ helm install stable/spartakus
 helm ls
 ```
 
-![Image of helm ls](img/helm_ls.png)
+![Image of helm ls](https://github.com/fabioharams/kubernetes/blob/master/img/helm_ls.png)
 
 ### List the status of Charts ###
 ```bash
@@ -183,7 +183,7 @@ After the installation you can open the browser and navigate to the URL:
 http://localhost:8001/api/v1/proxy/namespaces/default/services/kubeopsview-kube-ops-view/
 ```
 
-![Image of kubeopsview](img/kubeops.png)
+![Image of kubeopsview](https://github.com/fabioharams/kubernetes/blob/master/img/kubeops.png)
 
-![Image of kubeopsview creating pod](img/kubeops2.png)
+![Image of kubeopsview creating pod](https://github.com/fabioharams/kubernetes/blob/master/img/kubeops2.png)
 
