@@ -187,3 +187,16 @@ http://localhost:8001/api/v1/proxy/namespaces/default/services/kubeopsview-kube-
 
 ![Image of kubeopsview creating pod](https://github.com/fabioharams/kubernetes/blob/master/img/kubeops2.PNG)
 
+
+## Extra - How to scale Agents ##
+
+You can scale in/out the agents just using AZ command
+
+### Increase/decrease the number of Agents ###
+
+```
+az acs scale -g HaraRG10 -n harak8srg11 --new-agent-count 3
+```
+
+This command will change the number of agents. 
+
