@@ -25,6 +25,11 @@ az acs create --orchestrator-type=kubernetes --resource-group HaraRG11 --name=ha
 ```
 Wait few minutes until the process finish. After the deployment is finished then you can check if everything is working fine
 
+```azurecli
+az acs show -g HaraRG11 -n harak8srg11
+```
+
+
 ### Extra commands ###
 
 You can add the following options:
@@ -42,9 +47,7 @@ This option will create agents using Standard D3_v2
 
 ------------------------------------------------------------------------------------
 
-```azurecli
-az acs show -g HaraRG11 -n harak8srg11
-```
+
 Install K8s command line (Kubectl)
 
 ```azurecli
