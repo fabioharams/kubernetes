@@ -25,6 +25,23 @@ az acs create --orchestrator-type=kubernetes --resource-group HaraRG11 --name=ha
 ```
 Wait few minutes until the process finish. After the deployment is finished then you can check if everything is working fine
 
+### Extra commands ###
+
+You can add the following options:
+- Increase number os masters (default=1)
+```
+--master-count=2
+```
+This option will create 2 masters
+
+- Choose size of the agents (default=Standard_D2_v2)
+```
+--agent-vm-size=Standard_D3_v2
+```
+This option will create agents using Standard D3_v2
+
+
+
 ```azurecli
 az acs show -g HaraRG11 -n harak8srg11
 ```
