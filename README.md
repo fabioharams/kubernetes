@@ -28,6 +28,11 @@ Wait few minutes until the process finish. After the deployment is finished then
 ```azurecli
 az acs show -g HaraRG11 -n harak8srg11
 ```
+If you want to deploy Kubernetes on Windows Server 2016 (preview) just use this command bellow
+
+```azurecli
+az acs create --orchestrator-type=kubernetes --resource-group hararg2 --name=hararg2 --agent-count=2 --generate-ssh-keys --windows --admin-username fabioh --admin-password Pa$$w0rd
+```
 
 
 ### Extra commands ###
