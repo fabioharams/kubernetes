@@ -64,6 +64,13 @@ Copy the credentials from Kubernetes (on ACS) to kubectl locally
 az acs kubernetes get-credentials --resource-group=hararg11 --name=harak8srg11
 ```
 
+## IMPORTANT NOTE ##
+If you are using Bash for Windows 10 maybe you will see a lot of errors after executing this command. This is caused by the missing file (Config) from Kubernetes Cluster. You can correct this manually copying this file from K8s Master using SCP command. Follow the procedures bellow to fix:
+
+https://github.com/fabioharams/movek8mgmt
+
+
+
 Now you can check the installation of Kubernetes using the following command:
 
 ```bash
