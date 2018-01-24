@@ -58,6 +58,32 @@ Install K8s command line (Kubectl)
 ```azurecli
 sudo az acs kubernetes install-cli
 ```
+
+(Optional)
+If you are facing problems installing KUBECTL using the command above then you can install Google SDK using these steps:
+
+- Download de Google SDK
+```
+curl https://sdk.cloud.google.com | bash
+```
+
+- Restart the shell
+```
+exec -l $SHELL
+```
+
+- Initialize
+```
+gcloud init
+```
+
+After that you can install KUBECTL
+```
+gcloud components install kubectl
+```
+
+
+
 Copy the credentials from Kubernetes (on ACS) to kubectl locally
 
 ```azurecli
