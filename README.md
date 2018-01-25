@@ -201,6 +201,22 @@ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_
 chmod 700 get_helm.sh
 ./get_helm.sh
 ```
+### Important notes  ###
+
+Check if the version of TILLER is the same (both CLIENT and SERVER). Difference between CLient and Server version could not allow to deploy using HELM. 
+
+```
+helm version
+```
+
+You can upgrade TILLER using the following command:
+
+```
+helm init --upgrade
+```
+
+Just wait few seconds and then execute the command to check version
+
 
 After the installation you can check if everything is going fine. 
 
