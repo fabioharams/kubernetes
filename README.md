@@ -118,6 +118,12 @@ kubectl proxy &
 ```
 Obs: remember to not close your shell
 
+Update: Microsoft has changed AKS (RBAC is implemented by default). Just run the command bellow:
+
+```bash
+kubectl create clusterrolebinding kubernetes-dashboard -n kube-system --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+```
+
 Open the following URL on your browser (eg: Chrome) to access the Kubernetes dashboard:
 ```
 http://localhost:8001/ui
